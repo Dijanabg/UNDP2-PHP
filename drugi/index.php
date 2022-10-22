@@ -108,6 +108,3 @@ echo !(8>8)."<br>";  ///negacija
     echo $niz[1]."<br>";
     $nizkljuc = ["ime"=>"jelena", "prezime" =>"saric"];
     echo $nizkljuc["ime"]."<br>";
-
-
-?>
