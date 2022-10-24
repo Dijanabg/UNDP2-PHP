@@ -299,7 +299,7 @@ Expected Output : '547023.24'*/
     echo $str1;
     echo "<br>";
 
-    /*Write a PHP script to remove part of a string. Go to the editor
+    /*Write a PHP script to remove part of a string. 
 Original String : 'The quick brown fox jumps over the lazy dog'
 Remove 'fox' from the above string.
 Expected Output : 'The quick brown jumps over the lazy dog'*/
@@ -307,7 +307,41 @@ Expected Output : 'The quick brown jumps over the lazy dog'*/
     echo str_replace("fox", "", $string1);
     echo "<br>";
 
+    /*Write a PHP script to get the characters after the last '/' in an url. 
+Sample URL : 'http://www.example.com/5478631'
+Expected Output : '5478631'*/
+    $my_url = 'http://www.example.com/5478631';
+    echo substr($my_url, strrpos($my_url, '/') + 1);
+    echo "<br>";
+    /*Write a PHP script to replace multiple characters from the following string. 
+Sample String : '\"\1+2/3*2:2-3/4*3'
+Expected Output : '1 2 3 2 2 3 4 3'*/
+    $str4 = '\"\1+2/3*2:2-3/4*3';
+    echo str_replace(str_split('\\/:*?"<>|+-'), ' ', $str4);
+    echo "<br>";
 
+    /*Write a PHP script to select first 5 words from the following string. 
+Sample String : 'The quick brown fox jumps over the lazy dog'
+Expected Output : 'The quick brown fox jumps'*/
+    $string2 = 'The quick brown fox jumps over the lazy dog';
+    echo implode(' ', array_slice(explode(' ', $string2), 0, 5));
+    echo "<br>";
+
+    /*Write a PHP script to remove comma(s) from the following numeric string. 
+Sample String : '2,543.12'
+Expected Output : 2543.12*/
+    $str5 = "2,543.12";
+    $x = str_replace(',', '', $str5);
+    if (is_numeric($x)) {
+        echo $x;
+    }
+    echo "<br>";
+
+    /*Write a PHP script to print letters from 'a' to 'z'. 
+Expected Result : <abcdefghijklmnopqrstuvwxyz></abcdefghijklmnopqrstuvwxyz>*/
+    for ($x = ord('a'); $x <= ord('z'); $x++)
+        echo chr($x);
+    echo "<br>";
     ?>
 
 </body>

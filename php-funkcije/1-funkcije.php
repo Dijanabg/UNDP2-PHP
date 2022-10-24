@@ -38,7 +38,7 @@ echo sabiranje2BrojaKrozParametreSaPredefinisanimVrednostima();
 echo "<br>";
 
 echo sabiranje2BrojaKrozParametreSaPredefinisanimVrednostima(3);
-echo "<br>";
+echo "<hr>";
 
 //https://www.php.net/manual/en/functions.arguments.php
 echo sabiranje2BrojaKrozParametreSaPredefinisanimVrednostima(b: 3);
